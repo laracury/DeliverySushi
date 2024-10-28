@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/style/config.css">
+    <link rel="stylesheet" href="assets/style/navbar.css">
+    <title>DeliverySushi</title>
+</head>
+<body>
+    <header class="inicio">
+        <nav class="menu-site">
+            <a href="index.html">Início</a>
+            <a href="empresa.html">Empresa</a>
+            <a href="serviço.html">Serviços</a>
+            <a href="blog.html">Blog</a>
+            <a href="contatos.html">Fale Conosco</a>
+
+        </nav>
+
+        <div class="search-bar">
+            <form class="search-form" onsubmit="searchProducts(event)">
+                <input type="search" id="search-input" placeholder="Pesquisar...">
+                <button type="submit"><span class="material-symbols-outlined">
+                    search
+                    </span></button>
+            </form>
+        </div>
+
+
+
+        <div class="icons">
+            <div id="menu"class="fas fa-bars"></div>
+        </div>
+
+    </header>
+</body>
+<script src="assets/scripts/menu.js"></script>
+</html>

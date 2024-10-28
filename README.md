@@ -10,3 +10,6 @@
   O projeto tem o intuito de promover um design focado em UX (Experiência do usuário), com efeitos que trazem sutileza e profissionalismo. 
   <br><br>
   Será um desgin responsível tanto para Desktop, como tablet e celular, para que o usuário não tenha dificuldades em utilizar!
+
+Fotos retiradas da <a href="https://unsplash.com/pt-br/fotografias/copo-plastico-verde-e-branco-com-canudo-preto-vIBMZpzl8KQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+  

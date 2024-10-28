@@ -1,0 +1,110 @@
+@import url(config.css);
+
+.inicio{ /* cabeçalho, barra */
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 9%;
+    z-index: 1000;
+    background-color: hsla(0, 0%, 7%, 0.938);
+}
+/*inicio estilização da barra de pesquisa*/
+.search-bar {
+    flex: 1;
+    text-align: center;
+}
+.search-form {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    max-width: 200px;
+}
+.search-form input[type="search"] {
+    width: 100%;
+    padding: 10px 40px 10px 10px;
+    border-radius: 20px;
+    border: 1px solid var(--salmao);
+    background-color: transparent;
+    outline: none;
+}
+.search-form button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 10px;
+    cursor: pointer;
+} 
+/*Final barra de pesquisa*/
+
+/*Inicio do menu*/
+.inicio .menu-site a{
+    color: var(--cinzaClaro);
+    font-family: var(--fonteDestaque);
+    font-size: 1.0rem;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+.inicio .menu-site a:hover{
+    color: #A69F3F ;
+}
+.inicio .icons div{
+    color: #fff;
+    font-size: 2.5rem;
+    margin-left: 1.5rem;
+    cursor: pointer;
+}
+.inicio .icons div:hover{
+    color: #A69F3F;
+}
+#menu{
+    display: none;
+    color: black;
+}
+#menu:hover{
+    color: #A69F3F;
+
+}
+
+
+@media(max-width:768px){ /*MOBILE*/
+    /*MENU Hamburguer responsivo*/
+    .inicio .logo{
+        width: 90px;
+        height: 90px;
+    }
+    .search-form{
+        max-width: 150px;
+    }
+    .inicio .icons #menu{
+        display: inline-block;
+    }
+    .inicio .menu-site{
+        position: absolute;
+        top: 110%;
+        right: 110%;
+        width: 15rem;
+        background-color: hsla(0, 0%, 7%, 0.801);
+        border-radius: .5rem;
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+    }
+    .inicio .menu-site.active{
+        right: 2rem;
+        transition: .4s linear;
+    }
+    .inicio .menu-site a{
+        display: block;
+        font-size: 1rem;
+        margin: 1.5rem 2rem;
+    }
+    #menu{
+        width: 30px;
+    }
+    /*Mobile do corpo*/
+}
