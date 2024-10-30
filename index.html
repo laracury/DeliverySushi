@@ -4,37 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="assets/style/config.css">
     <link rel="stylesheet" href="assets/style/navbar.css">
     <title>DeliverySushi</title>
 </head>
 <body>
-    <header class="inicio">
-        <nav class="menu-site">
-            <a href="index.html">Início</a>
-            <a href="empresa.html">Empresa</a>
-            <a href="serviço.html">Serviços</a>
-            <a href="blog.html">Blog</a>
-            <a href="contatos.html">Fale Conosco</a>
-
+    <header>
+        <nav class="menuDesktop">
+            <ul class="itemsDesktop">
+                <li><a href="" class="ativo">Inicio</a></li>
+                <li><a href="">Cardápio</a></li>
+                <li><a href="">Por que nós?</a></li>
+                <li><a href="">Contato</a></li>
+            </ul>
         </nav>
-
-        <div class="search-bar">
-            <form class="search-form" onsubmit="searchProducts(event)">
-                <input type="search" id="search-input" placeholder="Pesquisar...">
-                <button type="submit"><span class="material-symbols-outlined">
-                    search
-                    </span></button>
-            </form>
+        <div class="acessoMenu">
+            <img class="iconePesquisa" src="assets/icons/pesquisaCinza.svg" alt="Icone de pesquisa">
+            <input type="search" placeholder="Pesquisar..." >
+            
+            <div class="user-car">
+                <img src="assets/icons/userCinza.svg" alt="Icone de usuário">
+                <img src="assets/icons/carrinhoCinza.svg" alt="Icone de carrinho">  
+            </div>
         </div>
-
-
-
-        <div class="icons">
-            <div id="menu"class="fas fa-bars"></div>
+        <!--Menu mobile-->
+        <div id="menu">
+            <div id="menu-bar" onclick="menuOnClick()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+    
+            <nav class="nav" id="nav">
+                <ul>
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="">Cardápio</a></li>
+                    <li><a href="">Por que nós?</a></li>
+                    <li><a href="">Contato</a></li>
+                </ul>
+            </nav>
         </div>
-
+        <div class="menu-bg" id="menu-bg"></div>
+        <!--Fim Menu mobile-->
     </header>
 </body>
 <script src="assets/scripts/menu.js"></script>
